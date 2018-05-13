@@ -39,6 +39,11 @@ namespace DataProtectionApplication
             SubstitutionOutputTextBlock.Text = substitution.Process(SubstitutionInputTextBox.Text);
         });
 
+        private void HuffmanButton_OnClick(object sender, RoutedEventArgs e) => SafeAction(() =>
+        {
+            HuffmanOutputTextBox.Text = HuffmanUtilities.Process(HuffmanInputTextBox.Text);
+        });
+
         private static void SafeAction(Action action)
         {
             try

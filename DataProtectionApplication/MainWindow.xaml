@@ -84,5 +84,28 @@
                 </Grid>
             </Grid>
         </TabItem>
+        <TabItem Header="Huffman">
+            <Grid Background="#FFE5E5E5">
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Input:"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="HuffmanInputTextBox" Text="СТУКОВ КОНСТАНТИН МИХАЙЛОВИЧ"/>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Output:"/>
+                    <TextBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" x:Name="HuffmanOutputTextBox"/>
+                    <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Compute" Click="HuffmanButton_OnClick"/>
+                </Grid>
+            </Grid>
+        </TabItem>
     </TabControl>
 </Window>
