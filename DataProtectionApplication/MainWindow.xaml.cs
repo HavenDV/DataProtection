@@ -18,7 +18,21 @@ namespace DataProtectionApplication
             PermutationOutputTextBlock.Text = permutation.Process(PermutationInputTextBox.Text);
         });
 
-        private void SafeAction(Action action)
+        private void VizhinerButton_OnClick(object sender, RoutedEventArgs e) => SafeAction(() =>
+        {
+            var replacement = new VizhinerReplacement(ReplacementKeyTextBox.Text);
+
+            ReplacementOutputTextBlock.Text = replacement.Process(ReplacementInputTextBox.Text);
+        });
+
+        private void BeaufortButton_OnClick(object sender, RoutedEventArgs e) => SafeAction(() =>
+        {
+            var replacement = new BeaufortReplacement(ReplacementKeyTextBox.Text);
+
+            ReplacementOutputTextBlock.Text = replacement.Process(ReplacementInputTextBox.Text);
+        });
+
+        private static void SafeAction(Action action)
         {
             try
             {

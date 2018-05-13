@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Permutation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Replacement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
