@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtectionLibrary", "DataProtectionLibrary\DataProtectionLibrary.csproj", "{84CBCE68-D014-47FD-A5A5-808B03D7840E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtectionLibrary.Tests", "DataProtectionLibrary.Tests\DataProtectionLibrary.Tests.csproj", "{14959EBC-B8D8-4CFF-B04A-E0F71CCC45F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProtectionApplication", "DataProtectionApplication\DataProtectionApplication.csproj", "{FCDA412D-5E1D-40E7-936C-E796CE825B8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{84CBCE68-D014-47FD-A5A5-808B03D7840E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84CBCE68-D014-47FD-A5A5-808B03D7840E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84CBCE68-D014-47FD-A5A5-808B03D7840E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14959EBC-B8D8-4CFF-B04A-E0F71CCC45F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14959EBC-B8D8-4CFF-B04A-E0F71CCC45F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14959EBC-B8D8-4CFF-B04A-E0F71CCC45F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14959EBC-B8D8-4CFF-B04A-E0F71CCC45F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCDA412D-5E1D-40E7-936C-E796CE825B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCDA412D-5E1D-40E7-936C-E796CE825B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCDA412D-5E1D-40E7-936C-E796CE825B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCDA412D-5E1D-40E7-936C-E796CE825B8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
