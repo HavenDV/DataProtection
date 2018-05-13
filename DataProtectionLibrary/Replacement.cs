@@ -19,10 +19,10 @@ namespace DataProtectionLibrary
 
     public class BaseReplacement
     {
-        public string Key { get; set; }
-        public Func<int, int, int, int> Func { get; set; }
+        private string Key { get; }
+        private Func<int, int, int, int> Func { get; }
 
-        public BaseReplacement(string key, Func<int, int, int, int> func)
+        protected BaseReplacement(string key, Func<int, int, int, int> func)
         {
             Key = key ?? throw new ArgumentNullException(nameof(key));
             Func = func ?? throw new ArgumentNullException(nameof(func));

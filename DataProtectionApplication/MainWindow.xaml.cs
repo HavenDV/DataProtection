@@ -32,6 +32,13 @@ namespace DataProtectionApplication
             ReplacementOutputTextBlock.Text = replacement.Process(ReplacementInputTextBox.Text);
         });
 
+        private void SubstitutionButton_OnClick(object sender, RoutedEventArgs e) => SafeAction(() =>
+        {
+            var substitution = new Substitution(SubstitutionKeyTextBox.Text);
+
+            SubstitutionOutputTextBlock.Text = substitution.Process(SubstitutionInputTextBox.Text);
+        });
+
         private static void SafeAction(Action action)
         {
             try

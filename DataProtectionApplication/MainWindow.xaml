@@ -59,5 +59,30 @@
                 </Grid>
             </Grid>
         </TabItem>
+        <TabItem Header="Substitution">
+            <Grid Background="#FFE5E5E5">
+                <Grid Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition Height="25"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Content="Input:"/>
+                    <TextBox Grid.Row="0" Grid.Column="1" x:Name="SubstitutionInputTextBox" Text="СТУКОВ КОНСТАНТИН"/>
+                    <Label Grid.Row="1" Grid.Column="0" Content="Output:"/>
+                    <TextBlock Grid.Row="1" Grid.Column="1" x:Name="SubstitutionOutputTextBlock"/>
+                    <Label Grid.Row="2" Grid.Column="0" Content="Key:"/>
+                    <TextBox Grid.Row="2" Grid.Column="1" x:Name="SubstitutionKeyTextBox" Text="МИХАЙЛОВИЧ"/>
+                    <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="Compute" Click="SubstitutionButton_OnClick"/>
+                </Grid>
+            </Grid>
+        </TabItem>
     </TabControl>
 </Window>
